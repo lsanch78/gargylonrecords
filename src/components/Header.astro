@@ -7,7 +7,7 @@ import { SITE_TITLE } from '../consts';
 	<nav>
 		<h2 class="logo-title">
 			<a href="/">
-				<img src="/favicon.svg" alt="Gargylon Logo" class="logo-icon" />
+				<img src="/images/gargylon-logo.png" alt="Gargylon Logo" class="logo-icon" />
 				{SITE_TITLE}
 			</a>
 		</h2>
@@ -51,8 +51,8 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: var(--bg);
+		box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 	}
 	h2 {
 		margin: 0;
@@ -70,13 +70,13 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
+		color: var(--text);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
 		text-decoration: none;
-		color: black;
+		color: var(--text);
 		border-bottom-color: var(--accent);
 	}
 	nav a:hover {
@@ -100,7 +100,7 @@ import { SITE_TITLE } from '../consts';
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
-		color: var(--black);
+		color: var(--text);
 		text-decoration: none;
 	}
 
@@ -109,7 +109,6 @@ import { SITE_TITLE } from '../consts';
 		width: auto;
 		display: inline-block;
 		vertical-align: middle;
-
 	}
 
 </style>
